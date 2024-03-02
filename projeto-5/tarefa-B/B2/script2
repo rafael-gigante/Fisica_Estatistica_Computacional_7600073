@@ -1,0 +1,11 @@
+set title "Tarefa B - Têmpera"
+set autoscale fix
+set term png
+set output "B2.png"
+set xlabel "iterações de Monte Carlo"
+set ylabel "Energia por sítio (E/N)"
+set yrange[-2:0]
+
+unset key
+
+plot 'erg-spin.out' with line lw 1 lc rgb "#ad2060"

@@ -1,0 +1,16 @@
+set size ratio 1
+set palette defined (0 "midnight-blue", 1 "coral")
+
+set autoscale fix
+set xtics 0,10,100 out nomirror
+set ytics 0,10,100 out nomirror
+set cbrange [0:1]
+
+set title "Tarefa C - L = 60, Δβ = 0.001"
+
+set term png
+set output "config.png"
+
+unset key
+
+plot "config.out" matrix w image

@@ -1,0 +1,11 @@
+set title "Tarefa C - L= 100, Δβ = 0.0001"
+set autoscale fix
+set term png
+set output "erg-spin.png"
+set xlabel "β"
+set ylabel "Energia por sítio (E/N)"
+set xrange [0:1]
+set yrange [-2:0]
+unset key
+
+plot 'erg-spin.out' with line lw 0.01 lc rgb "#ad2060"

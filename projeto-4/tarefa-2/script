@@ -1,0 +1,10 @@
+set title "Modelo de Crescimento DLA"
+set autoscale fix
+set term png
+set output "tarefa2.png"
+set xrange[-210:210]
+set yrange[-210:210]
+unset tics
+unset key
+
+plot 'seed.out' with points pt 6 ps 0.75 lc rgb "#ad2060"

@@ -1,0 +1,18 @@
+set size ratio 1
+set palette defined (0 "midnight-blue", 1 "coral")
+
+set autoscale fix
+set xtics 0,10,100 out nomirror
+set ytics 0,10,100 out nomirror
+set xrange[0:59]
+set yrange[0:59]
+set cbrange [0:1]
+
+set title "Tarefa B - Têmpera"
+
+set term png
+set output "config.png"
+
+unset key
+
+plot "config.out" matrix w image
